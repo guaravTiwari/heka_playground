@@ -6,16 +6,18 @@
 //
 
 import SwiftUI
+import heka
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+      NavigationView {
+        SwiftUIView(
+          uuid: UUID().uuidString,
+          apiKey: "7368bad8-aadd-4624-a58c-7e8af2b3cfb7"
+        )
         .padding()
+        .navigationTitle("Heka Preview")
+      }
     }
 }
 
