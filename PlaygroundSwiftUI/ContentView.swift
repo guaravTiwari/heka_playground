@@ -11,7 +11,7 @@ import heka
 struct ContentView: View {
     var body: some View {
       NavigationView {
-        SwiftUIView(
+        HekaUIView(
           uuid: UUID().uuidString,
           apiKey: "7368bad8-aadd-4624-a58c-7e8af2b3cfb7"
         )
